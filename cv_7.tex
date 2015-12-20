@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\nopagenumbers 
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\firstname{Adonis} % Your first name
+\familyname{Settouf} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Zichy Jeno Utca 30.}{Hungary, Budapest 1066}
+\phone{+36 70 596 9895}
+\email{adonis.settouf@gmail.com}
+\homepage{adonis-settouf.neocities.org/index.html}{My personnal page} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Nationality: French}
+\extrainfo{Age: 24}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2011--2014}{Master degree in Computer Science}{Engineering School}{Ecole Nationale Superieure des Mines de Saint-Etienne} {}{}% Arguments not required can be left empty
+\cventry{2009--2011}{Joint Master}{Lycee Kleber}{Strasbourg}{Entrance to top 15th engineering school}{Advanced lessons in physics and mathematics}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\cventry{\textit{October 2014--December 2015}}{Solution expert}{\textsc{Lexmark}}{Budapest}{}{Developed tools for both internal use for troubleshooting purpose in Python, and reporting tools in both Javascript and VBA. Installation and maintenance of a virtual environment with several print servers using Windows Server.
+\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Deployed on a virtual environment
+\begin{itemize}
+\item DNS on CentOs
+\item Windows server
+\begin{itemize}
+\item SMTP
+\item AD and DC
+\item Several print release applications(Lexmark Print Management, LRS ..etc)
+\end{itemize}
+\end{itemize}
+\item Python scripts
+\begin{itemize}
+\item  Send mail through a SMTP, allows to check if a step is blocking in the process
+\item Check ports opened(mainly since it is more lightweight than nmap)
+\end{itemize}
+\item Reporting tools for the team
+\begin{itemize}
+\item Google app script in Javascript to generate reports from emails
+\item VBA script to handle reports in Excel
+\end{itemize}
+\end{itemize}
+}
+%------------------------------------------------
+
+\cventry{\textit{April--September 2014}}{Web development intern}{\textsc{CGI}}{Paris}{}{Developed part of Louis Vuitton new e-commerce website, and parts of a prototype for Dior
+\newline{}
+Detailed Achievements:
+\begin{itemize}
+\item Bug tracking and fixes using Jira, and SVN as a CVS
+\item Learnt to use \textit{Less CSS} and \textit{HTML5} technologies
+\item Realization of a responsive Carousel
+\item Prototype: Realization of a website synchronizing offline/online datas with a database using \textit{Bootstrap} and \textit{IndexDB}
+\end{itemize}
+}
+
+%------------------------------------------------
+\cventry{\textit{May--September 2013}}{Linux System Admin intern}{\textsc{Gemalto}}{La Ciotat}{}{Worked on the deployment of a new bug tracker, \textit{Redmine} and repository hoster, \textit{RhodeCode}
+\newline{}
+Detailed Achievements:
+\begin{itemize}
+\item Realization of tutorials and support for both users and my team
+\item Realization of migration scripts from other CVS used (MKS, SVN) to Mercurial
+\item Realization of scripts to generate usage reports from the MySQL database to Excel
+\item Administrating Linux servers on CentOs and maintaining a secure environment
+\item Administrating MySQL databases
+\end{itemize}
+}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{ \LaTeX, \textsc{R}, \textsc{C++}, \textsc{VBA}, Virtualization }
+\cvitem{Intermediate}{\textsc{python}, \textsc{PHP}, \textsc{CSS}, Javascript Frameworks, PHP frameworks, Linux, Microsoft Windows}
+\cvitem{Advanced}{\textsc{Javascript}, \textsc{Java}, \textsc{JEE}}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2014-2015}{Direct contact with system administrators to install and maintain Print release servers}
+\cvitem{2014}{Usage of Agile methods during the development of the e-commerce platform, with standup meetings every day}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitem{Mothertongue}{French}
+\cvitem{Fluent}{English}
+\cvitem{Basic}{Hungarian, Russian}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Interests}
+\cvlistdoubleitem{Reading}{Chess}
+\cvlistdoubleitem{Football}{Basketball}
+\end{document}
