@@ -13,8 +13,8 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,11 +29,13 @@
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
-\nopagenumbers 
+\nopagenumbers
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -42,13 +44,12 @@
 \familyname{Settouf} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Computer Scientist}
-\address{Zichy Jeno Utca 30.}{Hungary, Budapest 1066}
+\title{Informaticien}
+\address{Zichy Jeno Utca 30.}{Hongrie, Budapest 1066}
 \phone{+36 70 596 9895}
 \email{adonis.settouf@gmail.com}
-\homepage{adonis-settouf.neocities.org/index.html}{My personnal page} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{Nationality: French}
-\extrainfo{Age: 24}
+\homepage{adonis-settouf.neocities.org/index.html}{Ma page personnel} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Age: 24 ans}
 \photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 
 %----------------------------------------------------------------------------------------
@@ -58,104 +59,116 @@
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	EDUCATION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
 
-\cventry{2011--2014}{Master's degree in Computer Science}{Engineering School}{Ecole Nationale Superieure des Mines de Saint-Etienne} {}{Specialized in web development}
-\cventry{2009--2011}{Selective Joint Master in Engineering}{Lycee Kleber}{Strasbourg}{Entrance to the top 15th engineering school}{Advanced courses in Physics and Mathematics}
+\cventry{2011--2014}{Master en technologie de l'information}{Ecole d'ingénieurs}
+{Ecole Nationale Supérieure des Mines de Saint-Etienne} {}{Spécialisation en développement web}
+\cventry{2009--2011}{Classes Préparatoires}{Lycée Kléber}{Strasbourg}{Entrée en école d'ingénieurs classée 15e au niveau national}
+{1e année en MPSI\newline2e année en PSI*}
 
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+%	Expérience Professionnelle
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
-\cventry{October 2014--December 2015}{Solution expert}{\textsc{Lexmark}}{Budapest}{}{Developed tools for internal use for troubleshooting purpose in Python, and reporting tools in both \textsc{Javascript} and \textsc{VBA}. Installation and maintenance of a virtual environment with several print servers using \textsc{Windows Server} and Linux \textsc{CentOs}.
+\section{Experience Professionnelle}
+\cventry{Octobre 2014--Decembre 2015}{Expert en applications d'impression sécurisée}{\textsc{Lexmark}}{Budapest}{}
+{Développement de scripts à des fins de détection d'erreurs en \textsc{Python}, et de création de rapports en \textsc{Javascript}
+et \textsc{VBA}. Installation et maintenance d'un environnement virtuel mixte contenant des serveurs d'impression utilisant
+\textsc{Windows Server} et Linux \textsc{CentOs}.
 \newline{}
-Detailed achievements:
+Succès en détail:
 \begin{itemize}
-\item Deployed on a virtual environment
+\item Déploiement d'un environnement virtuel
 \begin{itemize}
-\item DNS on \textsc{CentOs}
+\item DNS sur \textsc{CentOs}
 \item \textsc{Windows server}
 \begin{itemize}
 \item SMTP
-\item AD and DC
-\item Several print release applications(\textsc{Lexmark Print Management}, \textsc{LRS} ..etc)
+\item AD et DC
+\item Applications d'impression sécurisée (\textsc{Lexmark Print Management}, \textsc{LRS} ..etc)
 \end{itemize}
 \end{itemize}
-\item \textsc{Python} scripts
+\item Scripts \textsc{Python}
 \begin{itemize}
-\item Send mail through a SMTP, which allows to check if a step is blocking in the process of using mails
-\item Check ports opened(mainly because the script is more lightweight than nmap)
+\item Envoi de mails via une passerelle SMTP permettant de vérifier chaque étape de la procédure
+\item Scanner de ports (plus léger que \textsc{NMAP})
 \end{itemize}
-\item \textsc{Javascript} and \textsc{VBA} Reporting tools for the team
+\item Outils de reporting pour Lexmark Worldwide\textsc{Javascript} et \textsc{VBA}
 \begin{itemize}
-\item Google app scripts in \textsc{Javascript} to generate reports from emails
-\item \textsc{VBA} scripts to handle reports in \textsc{Excel}
+\item Scripts Google app  en \textsc{Javascript} pour générer divers rapports pour une boîte mail donnée
+\item Scripts en \textsc{VBA} pour aider à la génération de rapports \textsc{Excel}
 \end{itemize}
 \end{itemize}
 }
 %------------------------------------------------
 
-\cventry{April--September 2014}{Web development intern}{\textsc{CGI}}{Paris}{}{Developed parts of Louis Vuitton's new e-commerce website, and parts of a prototype for Dior
+\cventry{Avril--Septembre 2014}{Stage en développement web}{\textsc{CGI}}{Paris}{}
+{Développement du nouveau site e-commerce de Louis Vuitton et d'un prototype pour Dior
 \newline{}
-Detailed Achievements:
+Succès en détail:
 \begin{itemize}
-\item Bug tracking and fixing using \textsc{Jira}, and \textsc{SVN} as a CVS
-\item Learnt to use \textsc{Less CSS} and \textsc{HTML5} technologies
-\item Realization of a responsive Carousel
-\item Prototype: Realization of a website synchronizing offline/online datas with a database using \textsc{Bootstrap} and \textsc{IndexDB}
+\item Découverte et résolution de bugs avec \textsc{Jira} comme plateforme de bug tracking, et \textsc{SVN} comme CVS
+\item Apprentissage des technologies  \textsc{HTML5} et de \textsc{Less CSS}
+\item Réalisation d'un caroussel responsif
+\item Prototype: Réalisation d'un site web synchronisant des données offline/online avec une base de données distante
+\item Utilisations de divers frameworks, \textsc{Bootstrap}, \textsc{IndexDB}, \textsc{RequireJS}, \textsc{scroll}...
 \end{itemize}
 }
 
 %------------------------------------------------
-\cventry{\textsc{May--September 2013}}{Linux System Admin intern}{\textsc{Gemalto}}{La Ciotat}{}{Worked on the deployment of a new bug tracker, \textsc{Redmine} and repository hoster, \textsc{RhodeCode}
+\cventry{\textsc{May--September 2013}}{Stage en administration de systèmes Linux}{\textsc{Gemalto}}{La Ciotat}{}{
+Déploiement d'un nouveau bug tracker: \textsc{Redmine} et d'un nouveau système de management de repository: \textsc{RhodeCode}
 \newline{}
-Detailed Achievements:
+Succès en détail:
 \begin{itemize}
-\item Realization of tutorials and support for both users and my team
-\item Realization of migration scripts from other CVS used (\textsc{MKS}, \textsc{SVN}) to \textsc{Mercurial}
-\item Realization of scripts to generate usage reports from the \textsc{MySQL} database to \textsc{Excel}
-\item Administrating Linux servers on \textsc{CentOs} and maintaining a secure environment
-\item Administrating \textsc{MySQL} databases
+\item Réalisation de tutoriaux afin d'entraîner et d'aider les équipes de développement
+\item Réalisation de scripts de migration depuis les autres CVS utilisés (\textsc{MKS}, \textsc{SVN}) vers \textsc{Mercurial}
+\item Réalisation de scripts générant des données sur l'utilisation des systèmes, depuis la base \textsc{MySQL} vers un document \textsc{Excel}
+\item Réalisation de scripts générant des données sur l'utilisation des serveurs avec \textsc{monit}
+\item Administration de serveurs Linux tournant sur \textsc{CentOs} et maintien d'un environnement sécurisé
+\item Administration de base de données \textsc{MySQL}
 \end{itemize}
 }
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Computer skills}
+\section{Compétences en informatique}
 
-\cvitem{Basic}{ \LaTeX, \textsc{R}, \textsc{C++}, \textsc{VBA}, Virtualization with \textsc{VMWare}}
-\cvitem{Intermediate}{\textsc{Python}, \textsc{PHP}, \textsc{CSS}, \textsc{Javascript} Frameworks, \textsc{PHP} frameworks, Linux and Microsoft Windows Server System Administration}
-\cvitem{Advanced}{\textsc{Javascript}, \textsc{Java}, \textsc{JEE}}
+\cvitem{Basique}{ \LaTeX, \textsc{R}, \textsc{C++}, \textsc{VBA}, Virtualisation with \textit{VMWare}}
+\cvitem{Intermédiaire}{\textsc{Python}, \textsc{PHP}, \textsc{CSS}, \textsc{Javascript} frameworks, \textsc{PHP} frameworks, \textsc{MySQL}, \textsc{MSSQL}, Linux and Microsoft Windows Server System Administration}
+\cvitem{Avancée}{\textsc{Javascript}, \textsc{Java}, \textsc{JEE}}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Communication Skills}
+\section{Compétences en communication}
 
-\cvitem{2014-2015}{Direct contact with system administrators to install and maintain Print release servers}
-\cvitem{2014}{Usage of Agile methods during the development of the e-commerce platform for Louis Vuitton, with standup meetings every day}
+\cvitem{2014-2015}{Contact direct avec les administrateurs systèmes de grandes entreprises afin d'installer
+et de procurer une maintenance adéquate de leurs serveurs d'impression}
+\cvitem{2014}{Utilisation de la méthode Scrum durant le développement
+du site de Louis Vuitton, avec par exemple un \textit{standup meeting} chaque jour}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
+\section{Langues}
 
-\cvitem{Mothertongue}{French}
-\cvitem{Fluent}{English}
-\cvitem{Basic}{Hungarian, Russian}
+\cvitem{Langue natale}{Français}
+\cvitem{Courant}{Anglais}
+\cvitem{Intermédiaire}{Allemand}
+\cvitem{Basique}{Hongrois, Espagnol, Russe}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
-\section{Interests}
-\cvlistdoubleitem{Reading}{Chess}
-\cvlistdoubleitem{Football}{Basketball}
+\section{Passions}
+\cvlistdoubleitem{Lecture}{Echecs}
+\cvlistdoubleitem{Football}{Informatique}
 \end{document}
