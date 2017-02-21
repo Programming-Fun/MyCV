@@ -23,7 +23,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -36,7 +36,7 @@
 \setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 \nopagenumbers
 
-\footskip = 0 pt
+\footskip = 5 pt
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -44,7 +44,6 @@
 \familyname{Settouf} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Ingénieur informaticien}
 \address{143 Avenue de Muret}{France, Toulouse 31300}
 \phone{+33 6 34 12 13 43}
 \email{adonis.settouf@gmail.com}
@@ -66,77 +65,38 @@ Nationalité: Française}
 
 \cventry{Actuellement}{Développeur}{\textsc{SQLi}}{Toulouse}{}{Conception et développement d'applications pour les clients de \textsc{SQLi}
 \newline{}
-Succès en détail
+\textsc{Airbus}:
 \begin{itemize}
-\item Mise à jour d'une architecture \textsc{ELK} et \textsc{Neo4j}
+\item Mise à jour d'une architecture \textsc{ElasticSearch} et \textsc{Neo4j}
 \item Mise en place et analyse de tests de performances avec \textsc{Jmeter}
-\item Analyse et revue de code 
-\item Analyse et mise en place d'outils pour le support de l'application
+\item Analyse et revue de code \textsc{Java}
 \end{itemize}
 }
 
-\cventry{Mars--Octobre 2016}{Développeur Java}{\textsc{TTTech}}{Budapest}{}{Développement d'applications de planifications de réseaux en temps réel
+\cventry{2016}{Développeur Java}{\textsc{TTTech}}{Budapest}{}{Développement d'applications de planifications de réseaux en temps réel
 \newline{}
 Succès en détail
 \begin{itemize}
-\item Développement d'un service \textsc{OSGi} 
-\begin{itemize}
-\item Installation et déploiement d'un serveur Flexnet
-\item Découverte et utilisation de l'API \textsc{Java} fournie par Flexnet
-\item Création d'un plugin \textsc{Eclipse} 
-\end{itemize}
-\item Travail sur une application certifiant la plannification de réseaux déterministiques
-\begin{itemize}
-\item Création et mise à jour de modèles \textsc{eCore}
-\item Apprentissage de standards dans la création de reseaux deterministiques, tels que l'AFDX, ainsi que l'AS6802. 
-\item Développements de tests \textsc{OCL} et de transformations de modèles via \textsc{Atlas}
-\end{itemize}
+\item Travail sur une application certifiant la plannification de réseaux déterministiques, utilisée par la \textsc{NASA}, \textsc{Boeing}
+\item Mises en place de tests unitaires en Python certifiant des puces pour le DO6802, nécessaires pour leur mise en place dans les avions \textsc{Boeing}
 \end{itemize}
 }
 %------------------------------------------------
-\cventry{Octobre 2014--Decembre 2015}{Expert en applications d'impression sécurisée (VIE)}{\textsc{Lexmark}}{Budapest}{}
-{Développement de scripts à des fins de détection d'erreurs en \textsc{Python}, et de création de rapports en \textsc{Javascript}
-et \textsc{VBA}. Installation et maintenance d'un environnement virtuel mixte contenant des serveurs d'impression utilisant
-\textsc{Windows Server} et Linux \textsc{CentOs}.
+\cventry{2014-2015}{Expert en applications d'impression sécurisée (VIE)}{\textsc{Lexmark}}{Budapest}{}
+{Déploiement d'outils interne pour faciliter le reporting, le déploiement et le support d'applications \textsc{Lexmark}
 \newline{}
 Succès en détail:
 \begin{itemize}
-\item Déploiement d'un environnement virtuel
+\item Support et déploiement de : 
 \begin{itemize}
 \item DNS sur \textsc{CentOs}
-\item \textsc{Windows server}
-\begin{itemize}
-\item SMTP
-\item AD et DC
-\item Applications d'impression sécurisée (\textsc{Lexmark Print Management}, \textsc{LRS} ..etc)
+\item Serveurs \textsc{Windows} avec SMTP, AD, DC, applications d'impression sécurisée comme \textsc{LPM}
 \end{itemize}
-\end{itemize}
-\item Scripts \textsc{Python}
-\begin{itemize}
-\item Envoi de mails via une passerelle SMTP permettant de vérifier chaque étape de la procédure
-\item Scanner de ports (plus léger que \textsc{NMAP})
-\end{itemize}
-\item Outils de reporting pour Lexmark Worldwide\textsc{Javascript} et \textsc{VBA}
-\begin{itemize}
-\item Scripts Google app  en \textsc{Javascript} pour générer divers rapports pour une boîte mail donnée
-\item Scripts en \textsc{VBA} pour aider à la génération de rapports \textsc{Excel}
-\end{itemize}
+\item Scripts \textsc{Python} de scan de ports et d'envoi de mails via un SMTP
+\item Outils de reporting pour Lexmark Worldwide en \textsc{Javascript} et \textsc{VBA}. Réduction de 2 jours d'analyse à 10 minutes.
 \end{itemize}
 }
 %------------------------------------------------
-
-\cventry{Avril--Septembre 2014}{Stage en développement web}{\textsc{CGI}}{Paris}{}
-{Développement du nouveau site e-commerce de Louis Vuitton et d'un prototype pour Dior
-\newline{}
-Succès en détail:
-\begin{itemize}
-\item Découverte et résolution de bugs avec \textsc{Jira} comme plateforme de bug tracking, et \textsc{SVN} comme CVS
-\item Apprentissage des technologies  \textsc{HTML5} et de \textsc{Less CSS}
-\item Réalisation d'un caroussel responsif
-\item Prototype: Réalisation d'un site web synchronisant des données offline/online avec une base de données distante
-\item Utilisations de divers frameworks, \textsc{Bootstrap}, \textsc{IndexDB}, \textsc{RequireJS}, \textsc{scroll}...
-\end{itemize}
-}
 
 
 %----------------------------------------------------------------------------------------
@@ -145,33 +105,19 @@ Succès en détail:
 
 \section{Education}
 
-\cventry{2016}{Machine Learning}{Cours en ligne}
-{BerkeleyX} {CS105x, CS110x, CS120x}{Apprentissage de techniques de machine learning à l'aide d'Apache Spark}
-\cventry{2011--2014}{Master en technologie de l'information}{Ecole d'ingénieurs}
-{Ecole Nationale Supérieure des Mines de Saint-Etienne} {}{Spécialisation en développement web}
-\cventry{2009--2011}{Classes Préparatoires}{Lycée Kléber}{Strasbourg}{Entrée en école d'ingénieurs classée 15e au niveau national}
-{1e année en MPSI\newline2e année en PSI*}
+
+\cventry{2011--2014}{Master en technologie de l'information}{Ecole Nationale Supérieure des Mines de Saint-Etienne}{}{}{}
+\cventry{2009--2011}{Classes Préparatoires PSI*}{Lycée Kléber}{}{}{}
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Compétences en informatique}
 
-\cvitem{Basique}{ \LaTeX, \textsc{R}, \textsc{C++}, \textsc{VBA}, Virtualisation avec \textit{VMWare}}
-\cvitem{Intermédiaire}{\textsc{Python}, \textsc{PHP}, \textsc{CSS}, \textsc{Javascript} frameworks, \textsc{PHP} frameworks, \textsc{MySQL}, \textsc{MSSQL}, Linux and Microsoft Windows Server System Administration}
-\cvitem{Avancée}{\textsc{Javascript}, \textsc{Java}, \textsc{JEE}}
+\cvitem{Basique}{ \LaTeX, \textsc{R}}
+\cvitem{Intermédiaire}{\textsc{JEE}, \textsc{Javascript}, \textsc{Angular} frameworks, \textsc{Python}, System Administration}
+\cvitem{Avancée}{\textsc{Java} }
 
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Compétences en communication}
-\cvitem{2016}{Stand up meeting lors du développement
-du service \textsc{OSGi}  vérifiant la véracité de la license utilisée par l'application \textsc(TTEPlan)}
-\cvitem{2014-2015}{Contact direct avec les administrateurs systèmes de grandes entreprises afin d'installer
-et de procurer une maintenance adéquate de leurs serveurs d'impression}
-\cvitem{2014}{Utilisation de la méthode Scrum durant le développement
-du site de Louis Vuitton, avec par exemple un \textit{standup meeting} chaque jour}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
@@ -181,13 +127,11 @@ du site de Louis Vuitton, avec par exemple un \textit{standup meeting} chaque jo
 
 \cvitem{Langue natale}{Français}
 \cvitem{Courant}{Anglais}
-\cvitem{Intermédiaire}{Allemand}
-\cvitem{Basique}{Hongrois, Espagnol, Russe}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 \section{Passions}
 \cvlistdoubleitem{Lecture}{Echecs}
-\cvlistdoubleitem{Football}{Informatique}
+\cvlistdoubleitem{Jogging}{Informatique}
 \end{document}
