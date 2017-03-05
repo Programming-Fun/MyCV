@@ -29,7 +29,7 @@
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.85]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 \nopagenumbers 
@@ -41,11 +41,10 @@
 \familyname{Settouf} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Software engineer}
 \address{143 Avenue de Muret}{France, Toulouse 31300}
 \phone{+33 6 34 12 13 43}
 \email{adonis.settouf@gmail.com}
-\homepage{adonis-settouf.neocities.org/index.html}{\textcolor{color1}{My personnal page}} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\homepage{asettouf.github.io}{\textcolor{color1}{My personnal page}} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 \extrainfo{Nationality: French}
 \extrainfo{Age: 24}
 \photo[70pt][0.4pt]{pictures/picture.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
@@ -66,73 +65,36 @@
 
 \cventry{Now}{Software Engineer}{\textsc{SQLi}}{Toulouse}{}{Conception and development of applications for the customers of \textsc{SQLi}
 \newline{}
-Detailed Achievements
+Detailed achievements
 \begin{itemize}
 \item Upgrade and deployment of applications using the \textsc{ELK} stack and \textsc{Neo4j}
-\item Cretion of performance tests with \textsc{Jmeter} and analysis of the results
-\item Code analysis and review
-\item Analysis and creation of tools for the support teams
+\item Creation of performance tests with \textsc{Jmeter} and analysis of the results
+\item \textsc{Java} code analysis and review
 \end{itemize}
 }
 
-\cventry{March--October 2016}{Java Software Developer}{\textsc{TTTech}}{Budapest}{}{Development of time triggered applications for scheduling in deterministic networks
+\cventry{2016}{Java Software Developer}{\textsc{TTTech}}{Budapest}{}{Development of time triggered applications for scheduling in deterministic networks
 \newline{}
 Detailed achievements:
 \begin{itemize}
-\item Development of a Flexnet \textsc{OSGi} bundle
-\begin{itemize}
-\item Installation and setup of a working Flexnet environment
-\item Usage of the Flexnet \textsc{Java} API
-\item Learn to use both the \textsc{Java} API and how to create \textsc{Eclipse} Plugins
-\end{itemize}
-\item Working on an application to certify the correctness of the planed network
-\begin{itemize}
-\item Learn how to create and update \textsc{eCore} models
-\item Learn about deterministic network standards such as AFDX and AS6802, and timing analysis done in such network (such as the network calculus approach)
-\item Development of \textsc{OCL} checks and \textsc{Atlas} transformations 
-\end{itemize}
+\item Development of a network scheduling application used by \textsc{Boeing} and \textsc{Nasa}
+\item Implementing Python unit testing, for the DO6802, of chips used in the automotive industry, such as \textsc{Audi}
 \end{itemize}
 }
 %------------------------------------------------
-\cventry{October 2014--December 2015}{Solution expert}{\textsc{Lexmark}}{Budapest}{}{Developed tools for internal use for troubleshooting purpose in Python, and reporting tools in both \textsc{Javascript} and \textsc{VBA}. Installation and maintenance of a virtual environment with several print servers using \textsc{Windows Server} and Linux \textsc{CentOs}.
+\cventry{October 2014--December 2015}{Solution expert}{\textsc{Lexmark}}{Budapest}{}{Developed tools for internal use for troubleshooting and ease of install, and reporting tools.
 \newline{}
 Detailed achievements:
 \begin{itemize}
-\item Deployed on a virtual environment
+\item Support and deployment of
 \begin{itemize}
-\item DNS on \textsc{CentOs}
-\item \textsc{Windows server}
-\begin{itemize}
-\item SMTP
-\item AD and DC
-\item Several print release applications(\textsc{Lexmark Print Management}, \textsc{LRS} ..etc)
-\end{itemize}
+\item \textsc{CentOs} servers
+\item \textsc{Windows 2012 servers}
 \end{itemize}
 \item \textsc{Python} scripts
-\begin{itemize}
-\item Send mail through a SMTP, which allows to check if a step is blocking in the process of using mails
-\item Check ports opened(mainly because the script is more lightweight than nmap)
-\end{itemize}
-\item \textsc{Javascript} and \textsc{VBA} Reporting tools for the team
-\begin{itemize}
-\item Google app scripts in \textsc{Javascript} to generate reports from emails
-\item \textsc{VBA} scripts to handle reports in \textsc{Excel}
-\end{itemize}
+\item Google scripts to improve reporting (previously done manually). Decrease of analysis from 2 days to 10 minutes.
 \end{itemize}
 }
-%------------------------------------------------
-
-\cventry{April--September 2014}{Web development intern}{\textsc{CGI}}{Paris}{}{Developed parts of Louis Vuitton's new e-commerce website, and parts of a prototype for Dior
-\newline{}
-Detailed Achievements:
-\begin{itemize}
-\item Bug tracking and fixing using \textsc{Jira}, and \textsc{SVN} as a CVS
-\item Learnt to use \textsc{Less CSS} and \textsc{HTML5} technologies
-\item Realization of a responsive Carousel
-\item Prototype: Realization of a website synchronizing offline/online datas with a database using \textsc{Bootstrap} and \textsc{IndexDB}
-\end{itemize}
-}
-
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -140,8 +102,8 @@ Detailed Achievements:
 
 \section{Education}
 
-\cventry{2011--2014}{Master's degree in Computer Science}{Engineering School}{Ecole Nationale Superieure des Mines de Saint-Etienne} {}{Specialized in web development}
-\cventry{2009--2011}{Selective Joint Master in Engineering}{Lycee Kleber}{Strasbourg}{Entrance to the top 15th engineering school}{Advanced courses in Physics and Mathematics}
+\cventry{2011--2014}{Master's degree in Computer Science}{Engineering School}{Ecole Nationale Superieure des Mines de Saint-Etienne} {}{Specialized in J2E}
+\cventry{2009--2011}{Selective Joint Master in Engineering}{Lycee Kleber}{Strasbourg}{}{}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
@@ -149,18 +111,10 @@ Detailed Achievements:
 
 \section{Computer skills}
 
-\cvitem{Basic}{ \LaTeX, \textsc{R}, \textsc{C++}, \textsc{Angular}, \textsc{VBA}, Virtualization with \textsc{VMWare}}
-\cvitem{Intermediate}{\textsc{Python}, \textsc{PHP}, \textsc{CSS}, \textsc{Javascript} Frameworks, \textsc{PHP} frameworks, Linux and Microsoft Windows Server System Administration}
-\cvitem{Advanced}{\textsc{Javascript}, \textsc{Java}, \textsc{JEE}}
+\cvitem{Basic}{ \LaTeX, \textsc{Angular}, \textsc{VBA}, System Administration,\textsc{Javascript}}
+\cvitem{Intermediate}{\textsc{Java}, \textsc{JEE}}
 
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
 
-\section{Communication Skills}
-
-\cvitem{2014-2015}{Direct contact with system administrators to install and maintain Print release servers}
-\cvitem{2014}{Usage of Agile methods during the development of the e-commerce platform for Louis Vuitton, with standup meetings every day}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
@@ -176,6 +130,6 @@ Detailed Achievements:
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 \section{Interests}
-\cvlistdoubleitem{Reading}{Chess}
-\cvlistdoubleitem{Football}{Basketball}
+\cvlistdoubleitem{Astrophysics}{Chess}
+\cvlistdoubleitem{Football}{StackOverflow}
 \end{document}
